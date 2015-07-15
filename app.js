@@ -12,7 +12,8 @@ var users = require('./routes/users');
 var expressLayouts=require("express-ejs-layouts") 
 var happyhours = require('./routes/happyhours');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/nodetest');
+// mongoose.connect('mongodb://localhost/nodetest');
+mongoose.connect('mongodb://heroku_phttd0nr:khda7frstmlrus42aevgra6vud@ds047592.mongolab.com:47592/heroku_phttd0nr');
 
 var app = express();
 
