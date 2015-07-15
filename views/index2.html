@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Session Management in NodeJS using Express4.2</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script>
+$(document).ready(function(){
+    
+    $.get('http://localhost:3000/index2')
+    .done(function(msg){
+        console.log(msg);
+    })
+     .fail( function(err, textStatus, errorThrown) {
+        console.log(err);
+    });
+
+      // $("#logout").click(function(){
+      //       $.get('http://localhost:3000/logout', {username: })
+      // });
+});
+</script>
+</head>
+<body>
+<h1>Success!</h1>
+<!-- <input type="text" size="40" placeholder="Type your username" id="user"><br />
+<input type="password" size="40" placeholder="Type your password" id="password"><br /> -->
+<input type="button" value="Logout" id="Logout">
+</body>
+</html>
