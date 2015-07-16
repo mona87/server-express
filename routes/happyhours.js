@@ -23,7 +23,7 @@ exports.create = function(req, res) {
    var longitude = req.body.longitude; 
    console.log(req)
   //User.findOne({ name: name }, function(err, doc) {  // This line is case sensitive.
-  Happyhour.findOne({ restaurant: { $regex: new RegExp(restaurant, "i") } }, function(err, doc) {  // Using RegEx - search is case insensitive
+  Happyhour.findOne({ address: { $regex: new RegExp(address, "i") } }, function(err, doc) {  // Using RegEx - search is case insensitive
     if(!err && !doc) {
       
       
