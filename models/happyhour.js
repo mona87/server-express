@@ -9,7 +9,7 @@ var happyhourSchema = new Schema({
 	website: {type: String, required: true},
 	latitude: {type: String, required: true},
 	longitude: {type: String, required: true},
-	users: {type: Array}
+	
 }, { collection : 'happyhour' });
 
 var happyhour = mongoose.model('happyhour', happyhourSchema);

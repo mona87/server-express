@@ -79,6 +79,8 @@ app.put('/users',users.update);
 app.get('/users/:id', users.show);
 app.get('/happyhours', happyhours.index);
 app.put('/happyhours', happyhours.update);
+app.post('/happyhours', happyhours.create);
+app.delete('/happyhours', happyhours.delete);
 app.post('/users', function(req, res) {
 
     User.register(new User({ username : req.body.username }), req.body.password, function(err, user) {
